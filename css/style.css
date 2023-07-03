@@ -1,0 +1,285 @@
+/* mobile and up */
+
+body {
+    background-color:#0e0e0e;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+    color: #F3F3F3;
+    
+}
+body#paths {
+    background: url("../img/header/paths-bg-full4.jpg") no-repeat top;
+    background-size: 100%;
+    background-color: #1a1919;
+}
+body#incas {
+    background-color:#ffffff;/*#EDEEEA*/
+    color: #223042;
+    background: url("../img/header/incas-bg-full2.jpg") no-repeat top;
+    background-size: 100%;
+    
+}
+body#index {
+    background-color:#F3F3F3;/*#EDEEEA*/
+    color: black;
+}
+p {
+    font-size: 16px;
+    font-style: normal;
+    clear: both;
+    text-align: center;
+}
+span.yellow {
+    background-color: yellow;
+}
+span.pink {
+    background-color: rgb(251, 118, 234);
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header {
+    height: 320px;
+    background: url("../img/header/pizzarro-header.jpg") no-repeat top left;
+    background-size: 100%;
+    
+}
+header a {
+    color: #EDEEEA;
+}
+header .title {
+    font-size: 40px;
+    font-weight: 700; 
+    text-shadow: 2px 2px 6px #4a4a4a;
+    padding: 20px;
+    font-family: 'Philosopher', sans-serif;
+}
+header.paths .title a{
+    color: #ffffff;
+    text-shadow: none;
+}
+header.paths {
+    height: 100px;
+    background: none;
+    background-size: 100%;
+}
+#paths nav a {
+    color: #EDEEEA;
+    ;
+}
+header.incas {
+    height: 150px;
+    /* background: url("../img/header/incas-lg2.jpg") no-repeat center; */
+    background: none;
+    background-size: 100%;
+    
+}
+header nav {
+    width: 25%;
+    top: 0;
+    margin: 30px;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: stretch;
+    display: none;
+}
+
+section.intro {
+    text-align: center;
+    margin: 0 20px 60px 20px;
+}
+section.work {
+    margin: 30px;
+}
+section.work > div {
+    flex: 100%;
+    margin-bottom: 60px;
+}
+section.work p {
+    margin: 20px;
+}
+section.work p.statement_excrpt {
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.5;
+    margin: 0 auto 50px auto;
+}
+
+section.bio p{
+    text-align: left;
+    padding: 30px 100px 30px 100px;
+    /* font-family: 'Libre Baskerville', serif; */
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.right-align { 
+    margin-left: auto; 
+}
+nav {
+    margin: 10px;
+}
+nav > div {
+    text-align: center;
+    flex: 50%;
+    margin-bottom: 20px;
+}
+nav img {
+    text-align: right;
+    width: 150px;
+}
+nav div.paths img {
+    text-align: left;
+}
+nav.nav-xs {
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    margin: 20px 10px 10px 0;
+}
+footer {
+    padding: 30px;
+    background-color: #a3f5e9;
+    color: black;
+    /* margin-top: 200px; */
+}
+section.work img {
+    width: 100%;
+}
+section.work img.small {
+    width: 40%;
+    margin: 5%;
+    float: right;
+}
+.hidden-xs {
+    display: none;
+}
+
+/* tablets and up */
+@media (min-width: 600px) {
+    header {
+        height: 436px;
+        background: url("../img/header/paths1-md.jpg") no-repeat top left;
+        background-size: 100%;
+        
+    }
+    header nav {
+        width: 50%;
+        display:flex;
+    }
+    nav.nav-xs {
+        display: none;
+    }
+    section.work > div {
+        flex: 100%;
+    }
+    section.work img.big {
+        height: 550px;
+        margin: 20px;
+    }
+    section.work img {
+        width: auto;
+    }
+    section.work img.small {
+        width: auto;
+        margin: 15px;
+        float: right;
+    }
+    img.small {
+        height: 200px;
+        margin: 20px;
+    }
+    img.medium {
+        height: 300px;
+        margin: 10px;
+    }
+    .hidden-tablet {
+        display: none;
+    }
+    
+    
+}
+
+/* desktop and up */
+@media (min-width: 1080px) {
+    body#incas {
+        color:#F3F3F3
+    }
+    header.paths {
+        height: 150px;
+    }
+    header {
+        height: 350px;/*800px previously*/
+        /*paths2-lg, pink-lg, paths3-lg*/
+        /* background: url("../img/header/paths3-lg.jpg") no-repeat top left; */
+        background: url("../img/header/incas-lg.jpg") no-repeat top left;
+        background-size: 100%;
+        
+    }
+    header .title {
+        font-size: 40px;
+        font-weight: 700; /*esto tiene que cambiar en responsive*/
+        text-shadow: 2px 2px 6px #4a4a4a;
+        color: #EDEEEA;
+        padding: 20px;
+
+    }
+    header nav {
+        width: 25%;
+    }
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    nav {
+        margin: 40px;/*60px previously*/
+    }
+    nav > div {
+        text-align: center;
+        flex: 25%;
+    }
+    nav.nav-xs {
+        display: none;
+    }
+    section.work img.big {
+        height: 600px;
+    }
+    section.work p.statement_excrpt {
+        width: 700px;
+    }
+    div.center img.medium {
+        height: 350px;
+        margin: 20px;
+    }
+    .half {
+        width: 50%;
+    }
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+        text-align: right;
+    }
+    div.center {
+        text-align: center;
+        /* margin-bottom: 160px!important; */
+    }
+    .hidden-xl {
+        display: none;
+    }
+}
+/* large and up */
